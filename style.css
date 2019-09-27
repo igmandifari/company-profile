@@ -1,0 +1,971 @@
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+#back-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 30px;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    display: none;
+    color: #fff;
+}
+#back-to-top:hover{
+    color: #000;
+}
+#back-to-top.show {
+    opacity: 1;
+    display: block;
+    font-size: 3em;
+}
+#about,#jasa,#team,#testi,#hasil,#kontak,#find{
+    padding-top: 60px;
+}
+
+#intro {
+    width: 100%;
+    height: 630px;
+    width: 100%;
+    background: #ccc url(gambar/workspace-1.jpg) no-repeat;
+    background-size: cover;
+    padding: 0px;
+}
+
+
+.bayangan {
+    background: #111;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 630px;
+    opacity: 0.50;
+}
+
+#outer-wrapper{
+    width: 100%;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 10;
+    transition: .7s;
+}
+.header.headBlack{
+    background-color: #00245d;
+}
+
+.logo {
+    margin-left: 90px;
+    padding: 0 50px;
+    float: left;
+    width: 25%;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 37px;
+    padding: 15px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.info {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+    color: #fff;
+}
+.info h2 {
+    font-size: 3em;
+    font-family: helvetica;
+    margin: 0;
+}
+.info p {
+    font-size: 1.5em;
+    margin: 0;
+    line-height: 50px;
+}
+.more a {
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    right: 15%;
+    text-align: center;
+    color: #00245d;
+    background-color: #fff;
+    border:5px solid #fff;
+    border-radius: 20px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+}
+
+.more h2{
+    margin: 0;
+}
+.beli a{
+    text-align: center;
+    color: #00245d;
+    background-color: #fff;
+    border-radius: 20px;
+    border:7px solid #fff;
+    width: 180px;
+    margin: 0 auto;
+    display: block;
+    font-size: 15px;
+}
+.beli h2{
+    margin: 0;
+}
+
+.navigasi {
+    width: 55%;
+    margin: auto;
+    float: left;
+    margin-left: 110px;
+}
+
+.navigasi a{
+    float:left;
+    display:block;
+    color:white;
+    text-align:center;
+    padding:14px 15px;
+    text-decoration:none;
+    font-size:15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navigasi a.active-scrollsection {
+    color: #0072ff;
+}
+.navigasi a:hover{
+        color:#045cc0
+    }
+.navigasi .icon{
+            display:none;
+        }
+
+.kotak_nav{
+    padding-top: 20px;
+}
+#about {
+    height: 100%;
+}
+.konten {
+    height: 436px;
+    background-color: #fff;
+}
+#about h2 {
+    margin: 15px auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    width: 100%;
+    border-bottom: #000 solid 1px;
+    max-width: 250px;
+}
+.about_img {
+    width: 45%;
+    float: left;
+    text-align: center;
+    height: 650px;
+}
+.about_atas{
+    width: 100%;
+    float: left;
+    font-size: 28px;
+    font-weight: 400;
+}
+.about_atas2{
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    font-weight: 300;
+}
+.konten6{
+    height: 500px;
+    background-color: #fff;
+}
+.about_text2 {
+    margin-left:7%;
+    width: 25%;
+    float: left;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+}
+.about_text2 h3 {
+    margin-top:55px;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 400;
+}
+.about_img2 h3 {
+    font-size: 50px;
+    color: black;
+    font-weight: 300;
+}
+
+.about_text {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+.about_text h3 {
+    margin-top:55px;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 400;
+}
+.about_img h3 {
+    font-size: 50px;
+    color: black;
+    font-weight: 300;
+}
+
+.slider {
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #7d7d7d;
+    height: 600px;
+}
+
+.konten, .konten3, .konten4 {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #fff;
+    height: 650px;
+    font-size: 100px;
+    text-align: center;
+}
+.konten2{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #00245d;
+    height: 650px;
+    font-size: 100px;
+    text-align: center;
+}
+.hasil {
+    width: 100%;
+    background-color: red;
+    height: auto;
+    font-size: 100px;
+    text-align: center;
+}
+
+.konten3{
+    background-color: #fff;
+}
+
+.konten2 h2, .konten4 h2 {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    border-bottom: 1px solid;
+    width: 100%;
+    max-width: 370px;
+    font-weight: 400;
+}
+.konten3 h2{
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    border-bottom: 1px solid;
+    width: 100%;
+    max-width: 370px;
+    font-weight: 400;
+}
+
+.srv, .prt , .pricing{
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    width: 100%;
+    max-width: 280px;
+    padding: 20px;
+    font-size: 0.8em;
+    margin: 0;
+    margin-top: 30px;
+}
+.tim{
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    width: 100%;
+    max-width: 280px;
+    padding: 20px;
+    font-size: 0.8em;
+    margin: 0;
+    margin-top: 30px;
+}
+
+
+.srv h3 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 400;
+    padding: 15px 10px;
+}
+.prt h3 {
+    font-size: 32px;
+    margin: 0;
+    padding: 15px 10px;
+}
+.mytim {
+    padding: 0 40px;
+}
+.myporto {
+    padding: 0 125px;
+}
+.testi {
+    padding: 0 125px;
+}
+.tim h3 {
+    font-size: 28px;
+    margin: 0;
+    padding: 15px 10px;
+}
+.srv p {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+.prt p {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+}
+.tim img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+}
+.tim p {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    padding: 10px 0;
+    margin: 0;
+    border-top: 1px solid;
+}
+.medsos a {
+    color: #000;
+    font-size: 34px;
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto;
+}
+.medsos a:hover {
+    color: #00245d;
+}
+
+.services{
+    display: inline-block;
+}
+.konten4{
+    background-color: #fff;
+}
+.konten4 h2{
+    color: #333;
+}
+.testi-con {
+    padding-top: 20px;
+}
+.footer {
+    width: 100%;
+    color: #fff;
+    position: relative;
+    background: #00245d;
+}
+
+#partikel {
+    margin-top: 10px;
+    width: 100%;
+    color: #fff;
+    height: 300px;
+    position: relative;
+    background: #00245d;
+}
+.footer h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+}
+
+.medsos-svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
+/* CSS Kontak */
+.kontak_bg{
+    position: relative;
+}
+.kontak_bg:before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background:#fff url(gambar/callto.jpg) no-repeat;
+  background-size: cover;
+  filter: brightness(0.7);
+}
+.konten5 {
+    position: relative;
+    margin-top: 10px;
+    height: 100%;
+    color: #fff;
+}
+.konten5 h2 {
+    margin: 0 auto;
+    padding: 25px 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 3.2em;
+    border-bottom: 2px solid;
+    width: 25%;
+}
+#form_Pesan {
+    width: 70%;
+    margin: 25px auto;
+    float: left;
+}
+
+.mykontak {
+    width: 85%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 0;
+    display: flex;
+}
+
+.info-kontak {
+    float: right;
+    width: 30%;
+    text-align: left;
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight:300;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.info-kontak p {
+    font-size: 16px;
+    font-weight:400;
+}
+
+.tombol.kontak{
+    background-color: #00245d;
+}
+.tombol.kontak:hover{
+    background-color: #000;
+}
+.before{
+	float:right;
+}
+
+.after{
+	float:left;
+}
+
+.text {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.text:focus {
+    border-color:#333;
+}
+
+.masukan, select{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-size: 22px;
+}
+
+
+.tombol {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 115px;
+    cursor: pointer;
+}
+
+.tombol:hover {
+  background-color: #45a049;
+}
+
+.label {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  font-weight: 700;
+}
+
+.inputan {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+.baris:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.quote-info {
+	padding: 35px 30px;
+	border: 1px solid #e5e5e5;
+}
+
+.quote-info .quote {
+	font-size: 15px;
+	line-height: 26px;
+	color: #787878;
+	margin: 0px 0px 30px;
+	letter-spacing: 0.5px;
+}
+
+.quote-info .author {
+	display: block;
+	overflow: hidden;
+}
+
+.quote-info .author-avatar {
+	width: 54px;
+	height: 54px;
+	border-radius: 99px;
+	float: left;
+}
+
+.quote-info .author-info {
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin-left: 16px;
+	font-style: normal;
+	margin-top: 6px;
+}
+
+.quote-info .author-info .name {
+	color: #444;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+.quote-info .author-info .company {
+	color: #933ded;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.quote-item {
+	padding: 0 15px;
+}
+
+.slick-dots {
+	display: table;
+	margin: 20px auto 0;
+}
+
+.slick-dots li {
+	float: left;
+	margin: 0 3px;
+}
+
+.slick-dots li button {
+	font-size: 0px;
+	width: 9px;
+	height: 9px;
+	padding: 0;
+	background: transparent;
+	border: 1px solid #933ded;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+	background: #933ded;
+}
+.quote-info .author-info .company {
+    color: #00BCD4;
+}
+.slick-dots li.slick-active button {
+    background: #00BCD4;
+}
+
+/* CSS ICON */
+.svg-hide {
+    display: none;
+}
+
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  .kartu-profile-social {
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .kartu-profile-social__item {
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    margin: 15px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #405de6;
+    box-shadow: 0px 7px 30px rgba(43, 98, 169, 0.5);
+    position: relative;
+    font-size: 21px;
+    flex-shrink: 0;
+    transition: all 0.3s;
+  }
+  @media screen and (max-width: 768px) {
+    .kartu-profile-social__item {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .kartu-profile-social__item:hover {
+      transform: scale(1.2);
+    }
+  }
+  .kartu-profile-social__item.facebook {
+    background: linear-gradient(45deg, #3b5998, #0078d7);
+    box-shadow: 0px 4px 30px rgba(43, 98, 169, 0.5);
+  }
+  .kartu-profile-social__item.twitter {
+    background: linear-gradient(45deg, #1da1f2, #0e71c8);
+    box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.7);
+  }
+  .kartu-profile-social__item.instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
+  }
+  .kartu-profile-social__item.github {
+    background: linear-gradient(45deg, #333, #626b73);
+    box-shadow: 0px 4px 30px rgba(63, 65, 67, 0.6);
+  }
+  .kartu-profile-social__item.link {
+    background: linear-gradient(45deg, #d5135a, #f05924);
+    box-shadow: 0px 4px 30px rgba(223, 45, 70, 0.6);
+  }
+  .kartu-profile-social .icon-font {
+    display: inline-flex;
+  }
+  #partikel canvas {
+    width: 100%;
+}
+@media screen and (min-width: 1024px){
+    .srv{max-width: 250px!important;}
+    .prt{max-width: 230px!important;}
+}
+@media screen and (max-width: 980px){
+    .navigasi {max-width: 510px;}
+    .header.headBlack {height: 130px;}
+    .navigasi a {font-size: 20px;}
+    .info h2 {font-size: 2em;}
+    .info p {font-size: 1.2em;}
+    .more a {font-size: 1.5em;}
+    #about, #jasa, #team, #testi, #hasil, #kontak, #find {padding-top: 120px;}
+    #about h2, .konten5 h2 {font-size: 2em;}
+    .konten2 h2,.konten3 h2, .konten4 h2 {font-size: 0.3em;}
+    .konten2{height: 780px;}
+    .konten3{height: 950px;}
+    .srv, .tim, .prt {max-width: 200px;font-size: 0.5em;margin-top: 15px;}
+    .srv h3 {font-size: 22px;}
+    .srv p {font-size: 14px;}
+    .prt h3 {font-size: 22px;}
+}
+@media screen and (max-width: 840px){
+    .navigasi {max-width: 420px;}
+    .navigasi a {font-size: 20px;}
+    .info h2 {font-size: 1.5em;}
+    .info p {font-size: 1em;}
+    .more a {font-size: 1.3em;}
+    #about h2 {font-size: 1.6em;}
+    .about_text h3 {font-size: 1em;}
+    .about_text p {font-size: 18px;}
+    .konten2 h2 {font-size: 0.25em;}
+    .srv h3 {font-size: 16px;}
+    .srv p {font-size: 12px;}
+    .prt h3 {font-size: 22px;}
+    .tim img {width: 150px;height: 150px;}
+    .srv, .tim{width:100%;max-width: 300px}
+    .konten3{height: 850px;}
+    .mytim {padding: 0 10px;}
+    .tim h3 {font-size: 26px;}
+    .tim p {font-size: 18px;}
+    .prt {max-width: 145px;}
+    .testi {padding: 0 15px;}
+    .medsos a {font-size: 22px;padding: 0 5px;}
+}
+@media screen and (max-width: 720px){
+    .logo {
+        margin: 0;
+        padding: 0;
+        float: left;
+        width: 30%;
+    }
+    .kotak_nav {
+        padding-top: 5px;
+    }
+    #about, #jasa, #team, #testi, #hasil, #kontak, #find {
+        padding-top: 60px;
+    }
+    .navigasi {max-width: 270px;float: right;}
+    /* .icon{color: #fff !important;font-size: 28px!important;} */
+    .header.headBlack {height: 70px;}
+    .navigasi.responsive {position:relative;background: #00245d;}
+    .navigasi.responsive .icon {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        margin: 0;
+    }
+    .navigasi.responsive a {
+        float: none;
+        display: block;
+        position: relative;
+        top: 0;
+        animation: fadeInRight 1s;
+    }
+    .navigasi a{ 
+                display:none;
+        }
+        .navigasi .icon {
+            display: block;
+            float: right;
+            margin-right: 20px;
+        }
+        .konten2 h2 {
+            font-size: 22px;
+        }
+        .srv, .tim {
+            max-width: 250px;
+        }
+        .konten2 h2, .konten3 h2, .konten4 h2 {
+            font-size: 28px;
+        }
+
+}
+@media screen and (max-width: 640px){
+    .about_text h3 {
+        font-size: 26px;
+    }
+    .konten3 {
+        height: 880px;
+    }
+}
+@media screen and (max-width: 580px){
+    .logo h1 {font-size: 28px;}
+    .navigasi {max-width: 220px;margin: 0}
+    .more a {
+        font-size: 20px;
+    }
+    .more2 a{
+        margin-left: 30%;
+    }
+    .about_text p {
+        font-size: 16px;
+    }
+    .about_text h3 {
+        font-size: 26px;
+    }
+    .mytim {
+        padding: 0;
+    }
+    .srv, .tim {
+        max-width: 215px;
+    }
+    .tim h3 {
+        font-size: 20px;
+    }
+    .prt {
+        width: 50%;
+        max-width: 150px;
+    }
+    .mykontak{display: block}
+    #form_Pesan {
+        width: 100%;
+        margin: 25px auto;
+        float: none;
+    }
+    .info-kontak{float: none;
+        width: 100%;}
+    .inputan {width: 65%;}
+    .myporto {
+        padding: 0 60px;
+    }
+}
+@media screen and (max-width: 480px){
+    .info h2 {
+        font-size: 1.2em;
+    }
+    .info p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 14px;
+    }
+    .more a {
+        font-size: 14px;
+    }
+
+    #about h2 {
+        font-size: 22px;
+        width: 45%;
+    }
+    .about_text h3 {
+        font-size: 22px;
+    }
+    .about_text p {
+        font-size: 14px;
+    }
+    .konten2 h2, .konten3 h2, .konten4 h2, .konten5 h2 {
+        font-size: 22px;
+        width: 50%;
+    }
+    .mytim {
+        padding: 0;
+    }
+    .konten2 {
+        height: 850px;
+    }
+    .tim h3 {
+        font-size: 22px;
+    }
+    .tim img {
+        width: 100px;
+        height: 100px;
+    }
+    .tim p {
+        font-size: 16px;
+    }
+    .prt {
+        max-width: 125px;
+    }
+    .prt h3 {
+        font-size: 18px;
+    }
+    .srv, .tim {
+        max-width: 135px;
+        padding: 0;
+    }
+    .kartu-profile-social__item {
+        width: 40px;
+        height: 40px;
+    }
+    .myporto {
+        padding: 0;
+    }
+    .konten {
+        height: 300px;
+    }
+    .about_img {
+        height: 300px;
+        padding: 0;
+    }
+    .about_img img {
+        width: 200px;
+        height: 300px;
+    }
+}
